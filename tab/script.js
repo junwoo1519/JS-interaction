@@ -29,6 +29,10 @@ function moveHighlight(idx) {
 function showTabContent(idx) {
     tabContent.forEach((item) => {
         item.style.display = 'none';
+        item.classList.remove('tab-content__on');
+        item.setAttribute('hidden', '');
     });
     tabContent[idx].style.display = 'block';
+    tabContent[idx].classList.add('tab-content__on');
+    tabContent[idx].removeAttribute('hidden');
 }
