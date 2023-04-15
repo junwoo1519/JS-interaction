@@ -32,8 +32,6 @@ body {
 }
 .tab__item {
   position: relative;
-}
-.tab__btn {
   width: 100px;
   height: 50px;
 }

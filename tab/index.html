@@ -11,23 +11,17 @@
 </head>
 <body>
 <div class="tab">
-    <ul class="tab__list">
-        <li class="tab__item tab__item--on">
-            <button type="button" class="tab__btn">Tab1</button>
-        </li>
-        <li class="tab__item">
-            <button type="button" class="tab__btn">Tab222</button>
-        </li>
-        <li class="tab__item">
-            <button type="button" class="tab__btn">Tab33333</button>
-        </li>
-    </ul>
+    <div class="tab__list" role="tablist">
+        <button type="button" class="tab__item tab__item--on" role="tab" aria-selected="true" id="tabButton01">Tab1</button>
+        <button type="button" class="tab__item" role="tab" aria-selected="true" id="tabButton02">Tab222</button>
+        <button type="button" class="tab__item" role="tab" aria-selected="true" id="tabButton03">Tab33333</button>
+    </div>
     <span class="tab__highlight"></span>
 </div>
 <div class="tab-content">
-    <div class="tab-content__fir">123</div>
-    <div class="tab-content__sec">asd</div>
-    <div class="tab-content__thr">zxc</div>
+    <div class="tab-content__fir" tabindex="0" role="tabpanel" aria-labelledby="tabButton01">123</div>
+    <div class="tab-content__sec" tabindex="0" role="tabpanel" aria-labelledby="tabButton02">asd</div>
+    <div class="tab-content__thr" tabindex="0" role="tabpanel" aria-labelledby="tabButton03">zxc</div>
 </div>
 </body>
 </html>
