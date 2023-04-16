@@ -11,17 +11,19 @@
 </head>
 <body>
 <div class="tab">
-    <div class="tab__list" role="tablist">
-        <button type="button" class="tab__item tab__item--on" role="tab" aria-selected="true" id="tabButton01">Tab1</button>
-        <button type="button" class="tab__item" role="tab" aria-selected="true" id="tabButton02">Tab222</button>
-        <button type="button" class="tab__item" role="tab" aria-selected="true" id="tabButton03">Tab33333</button>
+    <div class="tab__header">
+        <div class="tab__list" role="tablist">
+            <button type="button" class="tab__item on" role="tab" aria-selected="true" id="tabButton01">Tab1</button>
+            <button type="button" class="tab__item" role="tab" aria-selected="true" id="tabButton02">Tab222</button>
+            <button type="button" class="tab__item" role="tab" aria-selected="true" id="tabButton03">Tab33333</button>
+        </div>
+        <span class="tab__highlight"></span>
     </div>
-    <span class="tab__highlight"></span>
-</div>
-<div class="tab-content">
-    <div class="tab-content__on" tabindex="0" role="tabpanel" aria-labelledby="tabButton01">123</div>
-    <div tabindex="0" role="tabpanel" aria-labelledby="tabButton02" hidden>asd</div>
-    <div tabindex="0" role="tabpanel" aria-labelledby="tabButton03" hidden>zxc</div>
+    <div class="tab__body">
+        <div class="on" tabindex="0" role="tabpanel" aria-labelledby="tabButton01">123</div>
+        <div tabindex="0" role="tabpanel" aria-labelledby="tabButton02">asd</div>
+        <div tabindex="0" role="tabpanel" aria-labelledby="tabButton03">zxc</div>
+    </div>
 </div>
 </body>
 </html>
